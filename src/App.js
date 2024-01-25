@@ -1,24 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    //In react, only one element/tag can be “returned” in a component (function). 
+    //If more, adjacent elements must be wrapped in an enclosing tag <> <>.
+    <>
+      <nav>
+        <li>Home</li>
+        <li>Contact</li>
+        <li>Phone</li>
+      </nav>
+      <div className="container">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio quo
+        eligendi dolorum itaque reprehenderit. Cupiditate repellat aperiam error
+        possimus quas, cum, ab quae consequuntur rem repudiandae laborum tenetur
+        vero laboriosam, dolorum sunt cumque debitis?
+      </div>
+    </>
   );
 }
 
